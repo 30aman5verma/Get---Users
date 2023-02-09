@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#logo
+{
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  bottom: 40px;
+  width: auto;
+  height: auto;
+  overflow: hidden;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+*{
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: black;
+  padding: 30px 30px;
+  margin: 2px 2px;
+}
+
+nav li {
+  font-size: 25px;
+  display: inline-block;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  padding: 34px 23px;
+}
+
+nav li a:hover,
+nav li a.active {
+  text-decoration: underline;
+  color: rgb(82, 74, 74);
+}
+
+li button {
+  margin: 0px 9px;
+  background-color: black;
+  color: white;
+  padding: 3px 4px;
+  margin: 5px 1200px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: 'Baloo Bhai 2', cursive;
+  height: 60px;
+  width: 150px;
+}
+
+li button:hover {
+  background-color: grey;
+}
+
+
+#main{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  border-radius: 10px;
+}
+
+.info{
+  max-width: 270px;
+  margin: 15px auto;
+  margin-top: 7%;
+  font-family: bold;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: wheat;
+  border: 5px solid black;
+  color: black;
+}
+
+.info:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+  background: linear-gradient(-45deg,white,whitesmoke);
+  border: 5px solid yellow;
+  color: black;
+  cursor: pointer;
+}
+
+.image{
+  margin-bottom: 25px;
+  border: 3px solid black;
+}
+
+.id{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.name
+{
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.email
+{
+  font-family: sans-serif;
+  font-size: 15px;
+  overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 600px) {
+  #logo{
+    font-size: 35px;
+    margin-left: -9%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  margin-left: 50%;
+}
+}
+
+#load{
+  margin-top: 50%;
+  margin: 0 auto;
+}
+
+.loader {
+  border: 16px solid black;
+  border-top: 16px solid yellow;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-top: 50%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg);}
 }
